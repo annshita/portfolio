@@ -1,0 +1,104 @@
+{
+  "theme": "Light mode primary (Soft Pastel Pink, Whimsical & Elegant).",
+  "colors": {
+    "archetype": "PASTEL & SOFT combined with LUXURY",
+    "palette": {
+      "base": "Warm pale cream/blush white (#FCF9FA)",
+      "text_primary": "Deep Charcoal/Plum (#2A1A1E) for high contrast and readability",
+      "brand_primary": "Soft Pastel Pink (#FFD1DC)",
+      "accent": "Deeper Blush/Rose (#F4A3B4)",
+      "surface": "White (#FFFFFF) with delicate pink borders"
+    },
+    "contrast_rules": "Text on pink or white backgrounds MUST be Deep Charcoal (#2A1A1E). Never use light gray on pink. Interactive elements must darken on hover."
+  },
+  "typography": {
+    "strategy": "The 'Old Money Tech' variant with a feminine editorial twist.",
+    "headings": {
+      "font": "Cormorant Garamond",
+      "style": "Elegant, serif, refined, tight tracking for large sizes.",
+      "sizes": "H1: text-5xl md:text-7xl, H2: text-4xl."
+    },
+    "body": {
+      "font": "Outfit",
+      "style": "Clean geometric sans, highly readable for tech context.",
+      "sizes": "text-base to text-lg, loose leading."
+    },
+    "labels": {
+      "font": "Outfit",
+      "style": "Uppercase, wide tracking, text-xs to text-sm."
+    }
+  },
+  "layouts": {
+    "spacing": "Generous Spacing Philosophy. Use p-12, p-16, p-24 for section padding.",
+    "hero": "Kinetic Hero. Full height. Masked line-by-line reveal of 'Anshita Verma'. Subtle parallax abstract pink fluid background.",
+    "bento_grid": "MODE A: THE 'TETRIS' GRID for Skills section. Asymmetrical grid-cols-1 md:grid-cols-12 with gap-8.",
+    "projects": "Showcase with clipped frames (rounded-[2rem]). Product-photography-style image treatment.",
+    "experience": "Vertical timeline. Deep charcoal tracking line, glowing soft pink nodes.",
+    "manifesto": "Numbered manifesto chapters (01, 02, 03) for the About section.",
+    "marquee": "Slow editorial marquee using react-fast-marquee. Very slow, smooth drift. Pale pink background, dark plum text. Serif font. gap-32."
+  },
+  "visual_enhancers": {
+    "surfaces": "Glassmorphism for sticky headers and overlapping cards: bg-white/70 backdrop-blur-xl border-white/40 shadow-[0_8px_32px_rgba(42,26,30,0.05)].",
+    "borders": "Soft, delicate 1px borders (border-pink-200/50) on cards.",
+    "textures": "Subtle noise overlay globally to give a magazine/editorial feel."
+  },
+  "motion": {
+    "scroll": "Use lenis for smooth, premium momentum scrolling.",
+    "page_load": "Staggered Framer Motion reveals. Name text uses clip-path or overflow-hidden for line-by-line slide up.",
+    "scroll_reveals": "Framer motion whileInView. Elements fade up and slightly scale in over 0.8s.",
+    "micro_interactions": "Buttons: scale down slightly on click. Links: Underline expand on hover."
+  },
+  "component_instructions": {
+    "nav_bar": "Sticky header with Crystal Glassmorphism. NEVER use a fully transparent header.",
+    "contact_form": "Editorial-style form. Minimalist inputs (border-b only).",
+    "buttons": "Pill-shaped (rounded-full). Primary: bg-pink-200 text-charcoal hover:bg-pink-300 transition-colors."
+  },
+  "media": {
+    "image_urls": [
+      {
+        "url": "https://images.unsplash.com/photo-1589307004173-3c95204d00ee?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHBhc3RlbCUyMHBpbmslMjBmbHVpZCUyMGZvcm1zfGVufDB8fHx8MTc4NjQ1MzMzMXww&ixlib=rb-4.1.0&q=85",
+        "category": "Hero Section / Background",
+        "description": "Abstract pastel pink fluid form for 3D/Parallax background effect."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMHBhc3RlbCUyMHBpbmslMjBmbHVpZCUyMGZvcm1zfGVufDB8fHx8MTc4NjQ1MzMzMXww&ixlib=rb-4.1.0&q=85",
+        "category": "Marquee / Separator Background",
+        "description": "Pink and white abstract painting for section transitions."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1659050818222-5532a7829571?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwbWluaW1hbGlzdCUyMHRlY2glMjB3b3Jrc3BhY2UlMjBwaW5rfGVufDB8fHx8MTc4NjQ1MzMzMXww&ixlib=rb-4.1.0&q=85",
+        "category": "Projects / Experience",
+        "description": "Elegant minimalist pink tech workspace."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1769596722398-ed9d2ed08ae6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwzfHxlbGVnYW50JTIwbWluaW1hbGlzdCUyMHRlY2glMjB3b3Jrc3BhY2UlMjBwaW5rfGVufDB8fHx8MTc4NjQ1MzMzMXww&ixlib=rb-4.1.0&q=85",
+        "category": "Projects / About",
+        "description": "Laptop with pink phone case, soft aesthetic."
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Install required packages: framer-motion, react-fast-marquee, @studio-freight/react-lenis, lucide-react",
+    "Use .js or .jsx extensions for all files. DO NOT output .tsx files.",
+    "Apply fonts via Google Fonts in index.css: @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap');",
+    "Update tailwind.config.js to include font families: `serif: ['Cormorant Garamond', 'serif'], sans: ['Outfit', 'sans-serif']`.",
+    "Update index.css variables for Light Theme: --background: 340 20% 98%; --foreground: 343 25% 14%; --primary: 346 100% 91%; --primary-foreground: 343 25% 14%; --border: 340 20% 90%; --card: 0 0% 100%; --card-foreground: 343 25% 14%;",
+    "For the Kinetic Hero: Create a Framer Motion component in .jsx that splits 'Anshita Verma' into words or lines, wrapping them in an overflow-hidden span, animating `y` from 100% to 0%. Implement Parallax/3D using useScroll and useTransform on the fluid background image.",
+    "For the slow editorial marquee: Use react-fast-marquee. Content should be tech & ML keywords mixed with whimsical descriptors.",
+    "Ensure the header navigation is sticky (z-50) using Crystal Glassmorphism (backdrop-blur-xl bg-white/70). NEVER use a fully transparent header.",
+    "Contact form must have a real setup. Use a simple mock submit or purely frontend validation for now, but design it beautifully with floating labels or editorial bottom-border-only inputs.",
+    "Every interactive element MUST include a `data-testid` attribute (e.g., data-testid='hero-cta-button')."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic outputs. Avoid the 'AI slop' aesthetic.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition. e.g., transition: all.",
+    "You MUST NOT center align the app container, i.e., do not add .App { text-align: center; } in the css file.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations.",
+    "NEVER use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations separate good from extraordinary."
+  ]
+}
