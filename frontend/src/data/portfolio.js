@@ -2,14 +2,13 @@ export const PROFILE = {
   name: "Anshita Verma",
   first: "Anshita",
   last: "Verma",
-  role: "Software Engineer & ML Researcher",
+  role: "Software Engineer",
   email: "annshhita@gmail.com",
   phone: "+91 78078 59029",
   tagline:
-    "A computer scientist who finds a little magic in clean code, curious research, and softly polished interfaces.",
+    "Part code wizard, part digital detective, and full-time AI power user! I'm the \"jack of all trades, master of none\" SWE who dives headfirst into everything from grinding DSA to teaching ML models new tricks (and using AI to speed up the process).",
   bio: [
-    "I'm an Integrated M.Tech student in Computer Science & Engineering at NIT Hamirpur, currently shaping lockscreen experiences at Samsung R&D.",
-    "My days drift between framework engineering, deep-learning research, and 800+ solved problems worth of competitive programming — always chasing the elegant solution.",
+    "Hi! I'm an engineer who wears way too many hats. Armed with a B.Tech/M.Tech from NIT Hamirpur, experience shipping One UI features at Samsung, published deep learning research, and a mild obsession with LeetCode, I'm the kind of developer who uses AI to build faster, experiment bolder, and tackle tricky problems from every angle.",
   ],
 };
 
@@ -39,7 +38,7 @@ export const MANIFESTO = [
 
 export const SKILLS = {
   languages: ["C++", "C", "Kotlin", "Java", "Python", "SQL"],
-  focus: ["Deep Learning", "Machine Learning", "Operating Systems", "DSA", "Computer Networks", "DBMS"],
+  focus: ["Deep Learning", "Machine Learning", "Operating Systems", "DSA", "Computer Networks", "DBMS", "Object Oriented Programming", "LLD", "Android Development"],
   tools: ["VS Code", "Android Studio", "Git", "GitHub", "Gerrit"],
 };
 
@@ -91,6 +90,7 @@ export const ACHIEVEMENTS = [
 ];
 
 export const MARQUEE_WORDS = [
-  "Deep Learning", "Foundation Models", "Framework Engineering", "Competitive Programming",
-  "Research", "Foldables", "Agentic AI", "Elegant Systems",
+  "Competitive Programming", "Research & Development", "Machine Learning & Deep Learning",
+  "Artificial Intelligence", "C / C++", "Android Development", "Software Engineering",
+  "Computer Science Fundamentals",
 ];
