@@ -29,23 +29,31 @@ export const Projects = () => {
 
         <motion.div style={{ y: cardsY }} className="space-y-6">
           {PROJECTS.map((p, i) => (
-            <motion.div
-              key={p.title} custom={i} variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }}
+            <motion.a
+              key={p.title}
+              href={p.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              custom={i}
+              variants={reveal}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.2 }}
               data-testid={`project-item-${i}`}
-              className="group grid cursor-default gap-4 rounded-[2rem] border border-blush-200/60 bg-white/70 p-8 backdrop-blur-sm transition-colors hover:border-blush-400 md:grid-cols-12 md:items-center md:p-10"
+              className="group grid cursor-pointer gap-4 rounded-[2rem] border border-blush-200/60 bg-white/70 p-8 backdrop-blur-sm transition-all hover:border-blush-400 hover:shadow-lg md:grid-cols-12 md:items-center md:p-10"
             >
               <div className="md:col-span-3">
-                <span className="font-serif text-5xl italic text-blush-300">0{i + 1}</span>
+                <span className="font-serif text-5xl italic text-blush-300 transition-colors group-hover:text-blush-400">0{i + 1}</span>
               </div>
               <div className="md:col-span-8">
                 <div className="mb-2 flex items-center gap-3">
-                  <h3 className="font-serif text-3xl text-plum md:text-4xl">{p.title}</h3>
+                  <h3 className="font-serif text-3xl text-plum transition-colors group-hover:text-blush-600 md:text-4xl">{p.title}</h3>
                   <ArrowUpRight className="h-6 w-6 text-blush-400 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                 </div>
                 <p className="mb-3 text-xs uppercase tracking-widest text-blush-600">{p.stack}</p>
                 <p className="leading-relaxed text-plum/70">{p.desc}</p>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </motion.div>
 

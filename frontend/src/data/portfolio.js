@@ -69,16 +69,19 @@ export const PROJECTS = [
     title: "Kidney Disease Detection",
     stack: "Python · Deep Learning",
     desc: "One-shot kidney disease prediction using the TabPFN foundation model via Bayesian meta-learning, with a TabPFGen + KS-test + PCA/t-SNE augmentation pipeline — 97.59% accuracy on a 1,660-sample dataset.",
+    url: "https://github.com/annshita/CKD-using-TabPFN",
   },
   {
     title: "IoT Anomaly Detection",
     stack: "Python · Machine Learning",
     desc: "An IoT attack-detection framework across multiple datasets with PCA-based dimensionality reduction and Decision Tree, Naive Bayes, SVM & Logistic Regression models.",
+    url: "https://github.com/annshita/IoT-Anomaly-Detection-PCA",
   },
   {
     title: "Real-Time EDF Scheduler",
     stack: "C++ · Operating Systems",
     desc: "Designed and simulated the Earliest Deadline First real-time scheduling algorithm to analyse feasibility, deadline misses, and processor utilisation.",
+    url: "https://github.com/annshita/RTOS-Scheduler-using-Arduino",
   },
 ];
 
