@@ -1,10 +1,10 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useState, useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import axios from "axios";
 import { toast } from "sonner";
 import { PROFILE, LINKS } from "../../data/portfolio";
 
-const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
+const API = `${process.env.REACT_APP_BACKEND_URL || "http://localhost:8000"}/api`;
 
 const reveal = {
   hidden: { opacity: 0, y: 40 },
@@ -30,6 +30,15 @@ const Field = ({ label, textarea, ...props }) => (
 );
 
 export const Contact = () => {
+  const containerRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"],
+  });
+
+  const sectionOpacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0.3, 1, 1, 0.3]);
+  const parallaxY = useTransform(scrollYProgress, [0, 1], ["6%", "-6%"]);
+
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
 
@@ -52,9 +61,9 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" data-testid="contact-section" className="mx-auto max-w-7xl px-6 py-28 md:px-12 md:py-40">
-      <div className="grid gap-16 lg:grid-cols-12">
-        <motion.div variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }} className="lg:col-span-5">
+    <section ref={containerRef} id="contact" data-testid="contact-section" className="mx-auto max-w-7xl px-6 py-28 md:px-12 md:py-40">
+      <motion.div style={{ opacity: sectionOpacity, y: parallaxY }} className="grid gap-16 lg:grid-cols-12">
+        <motion.div variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} className="lg:col-span-5">
           <p className="mb-4 text-xs uppercase tracking-[0.35em] text-blush-600">(Contact)</p>
           <h2 className="font-serif text-5xl leading-[1.05] text-plum md:text-7xl">
             Let's make<br /><span className="italic text-blush-500">something</span> lovely
@@ -77,7 +86,7 @@ export const Contact = () => {
         </motion.div>
 
         <motion.form
-          onSubmit={submit} variants={reveal} custom={1} initial="hidden" whileInView="visible" viewport={{ once: true }}
+          onSubmit={submit} variants={reveal} custom={1} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }}
           data-testid="contact-form"
           className="space-y-8 lg:col-span-7"
         >
@@ -96,7 +105,7 @@ export const Contact = () => {
             {loading ? "Sending..." : "Send message →"}
           </button>
         </motion.form>
-      </div>
+      </motion.div>
     </section>
   );
 };
