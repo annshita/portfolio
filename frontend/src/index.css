@@ -75,3 +75,12 @@
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
 }
+
+/* Fix font descender clipping in marquee strip */
+.rfm-marquee-container,
+.rfm-marquee,
+.rfm-child {
+    padding-top: 0.25rem;
+    padding-bottom: 0.5rem;
+}
+
