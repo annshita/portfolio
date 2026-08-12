@@ -71,7 +71,13 @@ export const Contact = () => {
           <p className="mt-8 max-w-sm leading-relaxed text-plum/60">
             Have a role, a research idea, or just want to say hi? My inbox is always open.
           </p>
-          <a href={`mailto:${PROFILE.email}`} data-testid="contact-email-link" className="link-underline mt-8 inline-block text-lg text-plum">
+          <a
+            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(PROFILE.email)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="contact-email-link"
+            className="link-underline mt-8 inline-block text-lg text-plum"
+          >
             {PROFILE.email}
           </a>
           <div className="mt-6 flex gap-5">
