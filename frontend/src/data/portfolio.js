@@ -66,22 +66,25 @@ export const EXPERIENCE = [
 
 export const PROJECTS = [
   {
+    title: "GitHub Repo Agent",
+    stack: "Agentic AI, MCP",
+    desc: "An MCP based Agent that answers user queries about GitHub repositories. This Streamlit app lets you interact with GitHub repositories using natural language queries.",
+    github: "https://github.com/annshita/GitHub-Repo-Agent",
+    live: "https://repository-agent-mcp-tools.streamlit.app/",
+  },
+  {
+    title: "Real Time OS Scheduler",
+    stack: "C++ · Operating Systems",
+    desc: "A real-time task scheduling simulator, written in modern C++17. A portable C++ library + CLI + web visualizer with five scheduling algorithms, so it runs anywhere (Linux/macOS/Windows, or in CI) instead of requiring physical hardware or simulator.",
+    github: "https://github.com/annshita/RTOS-Scheduler",
+    live: "https://rtos-scheduler.onrender.com/",
+  },
+  {
     title: "Kidney Disease Detection",
     stack: "Python · Deep Learning",
     desc: "One-shot kidney disease prediction using the TabPFN foundation model via Bayesian meta-learning, with a TabPFGen + KS-test + PCA/t-SNE augmentation pipeline — 97.59% accuracy on a 1,660-sample dataset.",
-    url: "https://github.com/annshita/CKD-using-TabPFN",
-  },
-  {
-    title: "IoT Anomaly Detection",
-    stack: "Python · Machine Learning",
-    desc: "An IoT attack-detection framework across multiple datasets with PCA-based dimensionality reduction and Decision Tree, Naive Bayes, SVM & Logistic Regression models.",
-    url: "https://github.com/annshita/IoT-Anomaly-Detection-PCA",
-  },
-  {
-    title: "Real-Time EDF Scheduler",
-    stack: "C++ · Operating Systems",
-    desc: "Designed and simulated the Earliest Deadline First real-time scheduling algorithm to analyse feasibility, deadline misses, and processor utilisation.",
-    url: "https://github.com/annshita/RTOS-Scheduler-using-Arduino",
+    github: "https://github.com/annshita/CKD-using-TabPFN",
+    live: "",
   },
 ];
 
