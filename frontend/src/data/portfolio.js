@@ -6,9 +6,9 @@ export const PROFILE = {
   email: "annshhita@gmail.com",
   phone: "+91 78078 59029",
   tagline:
-    "Part code wizard, part digital detective, and full-time AI power user! I'm the \"jack of all trades, master of none\" SWE who dives headfirst into everything from grinding DSA to teaching ML models new tricks (and using AI to speed up the process).",
+    "Software engineer by day, code detective and AI power user by night. I’m a curious generalist who loves bridging the gap between core algorithms and real-world machine learning. Whether I’m optimizing data structures, fine-tuning ML models, or leveraging AI tools to build faster, I thrive on tackling new technical challenges head-on.",
   bio: [
-    "Hi! I'm an engineer who wears way too many hats. Armed with a B.Tech/M.Tech from NIT Hamirpur, experience shipping One UI features at Samsung, published deep learning research, and a mild obsession with LeetCode, I'm the kind of developer who uses AI to build faster, experiment bolder, and tackle tricky problems from every angle.",
+    "Hi! I'm an engineer who wears way too many hats. Armed with an Integrated Master's in Computer Science, experience at Samsung, published research, and a mild obsession with LeetCode, I'm the kind of developer who uses AI to build faster, experiment bolder, and tackle tricky problems from every angle.",
   ],
 };
 
@@ -22,24 +22,24 @@ export const MANIFESTO = [
   {
     n: "01",
     title: "Curiosity first",
-    body: "From Bayesian meta-learning to real-time schedulers, I follow questions wherever they lead — research papers, foundation models, and all.",
+    body: "I don't lock myself into a single niche. I willingly jump across domains and follow complex problems wherever they lead. But when a project demands depth, I can hyper focus and obsess over the finest details until it's solved.",
   },
   {
     n: "02",
     title: "Craft in the details",
-    body: "Whether it's a lockscreen animation on a foldable or a validation pipeline, the small refinements are where the delight lives.",
+    body: "From designing LaTeX-driven evaluation frameworks for medical image segmentation to writing clean, optimized algorithm pipelines, the real magic happens in the fine grained details. Research and implementation deserve the exact same precision.",
   },
   {
     n: "03",
     title: "Build things that ship",
-    body: "60+ production bugs validated, features integrated into flagship devices. Ideas matter most when they reach real people.",
+    body: "Two live web applications deployed and counting, with more concepts in active development. Clean code and bold research mean the most when they actually hit production and reach real people.",
   },
 ];
 
 export const SKILLS = {
-  languages: ["C++", "C", "Kotlin", "Java", "Python", "SQL"],
-  focus: ["Deep Learning", "Machine Learning", "Operating Systems", "DSA", "Computer Networks", "DBMS", "Object Oriented Programming", "LLD", "Android Development"],
-  tools: ["VS Code", "Android Studio", "Git", "GitHub", "Gerrit"],
+  languages: ["C++", "C", "Python", "Kotlin", "Java", "SQL", "HTML", "CSS", "JavaScript", "Typescript"],
+  focus: ["Deep Learning", "Machine Learning", "Operating Systems", "Data Structures and Algorithms", "Computer Networks", "Database Management Systems", "Object Oriented Programming", "System Design", "Android Development", "Artificial Intelligence", "Retrival Augmented Generation (RAG)", "Model Context Protocol (MCP)", "Agentic AI"],
+  tools: ["React", "Next.js", "React Native", "Express.js", "Rest API", "FastAPI", "Node.js", "PyTorch", "TensorFlow", "Keras", "Git", "GitHub", "Gerrit", "Android Studio", "VS Code"],
 };
 
 export const EXPERIENCE = [

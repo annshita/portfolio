@@ -44,7 +44,7 @@ export const Skills = () => {
 
       <motion.div style={{ opacity: sectionOpacity }} className="grid gap-6 md:grid-cols-12">
         <motion.div style={{ y: cardY1 }} variants={reveal} custom={0} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }}
-          className="rounded-[2rem] bg-blush-200/40 p-8 md:col-span-7 md:p-10">
+          className="rounded-[2rem] bg-blush-200/40 p-8 md:col-span-5 md:p-10">
           <Code2 className="mb-6 h-7 w-7 text-blush-600" />
           <h3 className="mb-5 font-serif text-2xl italic text-plum">Languages</h3>
           <div className="flex flex-wrap gap-3">
@@ -53,9 +53,9 @@ export const Skills = () => {
         </motion.div>
 
         <motion.div style={{ y: cardY2 }} variants={reveal} custom={1} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }}
-          className="rounded-[2rem] bg-cream p-8 ring-1 ring-blush-200/60 md:col-span-5 md:p-10">
+          className="rounded-[2rem] bg-cream p-8 ring-1 ring-blush-200/60 md:col-span-7 md:p-10">
           <Wrench className="mb-6 h-7 w-7 text-blush-600" />
-          <h3 className="mb-5 font-serif text-2xl italic text-plum">Tools</h3>
+          <h3 className="mb-5 font-serif text-2xl italic text-plum">Tools and Frameworks</h3>
           <div className="flex flex-wrap gap-3">
             {SKILLS.tools.map((s, i) => <Chip key={s} i={i}>{s}</Chip>)}
           </div>
