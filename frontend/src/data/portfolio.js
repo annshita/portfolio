@@ -66,6 +66,13 @@ export const EXPERIENCE = [
 
 export const PROJECTS = [
   {
+    title: "Code Chat",
+    stack: "Retrieval Augmented Generation (RAG)",
+    desc: "A Streamlit application that uses the Google Gemini API and LlamaIndex to let you chat with GitHub repositories!",
+    github: "https://github.com/annshita/RAG-Code-Chat",
+    live: "https://ragbasedcodechat.streamlit.app/",
+  },
+  {
     title: "GitHub Repo Agent",
     stack: "Agentic AI, MCP",
     desc: "An MCP based Agent that answers user queries about GitHub repositories. This Streamlit app lets you interact with GitHub repositories using natural language queries.",
