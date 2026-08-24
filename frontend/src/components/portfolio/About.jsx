@@ -11,8 +11,10 @@ const reveal = {
   }),
 };
 
-const WORKSPACE =
-  "https://images.unsplash.com/photo-1659050818222-5532a7829571?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwbWluaW1hbGlzdCUyMHRlY2glMjB3b3Jrc3BhY2UlMjBwaW5rfGVufDB8fHx8MTc4NjQ1MzMzMXww&ixlib=rb-4.1.0&q=85";
+// const WORKSPACE =
+//   "https://images.unsplash.com/photo-1659050818222-5532a7829571?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwbWluaW1hbGlzdCUyMHRlY2glMjB3b3Jrc3BhY2UlMjBwaW5rfGVufDB8fHx8MTc4NjQ1MzMzMXww&ixlib=rb-4.1.0&q=85";
+
+import WORKSPACE_IMAGE from "../../assets/cats.jpg";
 
 export const About = () => {
   const containerRef = useRef(null);
@@ -67,7 +69,7 @@ export const About = () => {
             variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }}
             className="overflow-hidden rounded-[2rem] border border-blush-200/60 shadow-lg shadow-blush-200/20"
           >
-            <img src={WORKSPACE} alt="Workspace" className="h-64 w-full object-cover md:h-72" />
+            <img src={WORKSPACE_IMAGE} alt="Workspace" className="h-64 w-full object-cover md:h-72" />
           </motion.div>
 
           <div className="mt-10 space-y-9">
