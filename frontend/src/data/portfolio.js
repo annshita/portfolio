@@ -26,13 +26,13 @@ export const MANIFESTO = [
   },
   {
     n: "02",
-    title: "Craft in the details",
-    body: "From designing LaTeX-driven evaluation frameworks for medical image segmentation to writing clean, optimized algorithm pipelines, the real magic happens in the fine grained details. Research and implementation deserve the exact same precision.",
+    title: "Attention to detail",
+    body: "From designing evaluation frameworks for medical datasets to writing clean, optimized algorithm pipelines, fine grained details always matter the most. Research and implementation deserve the exact same precision.",
   },
   {
     n: "03",
-    title: "Build things that ship",
-    body: "Two live web applications deployed and counting, with more concepts in active development. Clean code and bold research mean the most when they actually hit production and reach real people.",
+    title: "Keep learning, keep shipping",
+    body: "Some deployed web applications while some concepts still developing, clean code and bold research mean the most when they actually hit production and reach real people.",
   },
 ];
 
@@ -67,15 +67,34 @@ export const EXPERIENCE = [
 export const PROJECTS = [
   {
     title: "Code Chat",
-    stack: "Retrieval Augmented Generation (RAG)",
-    desc: "A Streamlit application that uses the Google Gemini API and LlamaIndex to let you chat with GitHub repositories!",
+    stack: "Retrieval Augmented Generation (RAG), LlamaIndex (Data Orchestration), Vector Embeddings",
+    points: [
+      "Architected a Retrieval-Augmented Generation (RAG) application using LlamaIndex and Google Gemini to automatically ingest, chunk, and analyze GitHub repositories, enabling users to interactively query complex codebases using natural language.",
+      "Engineered an in-memory semantic search pipeline utilizing Gemini Embeddings (VectorStoreIndex) combined with custom PromptTemplates to inject top-K relevant code snippets into the LLM context, effectively mitigating AI hallucinations by grounding all responses in the retrieved source code.",
+      "Developed a stateful, low-latency conversational interface using Streamlit, implementing session-state logic for chat history persistence and global resource caching to eliminate redundant API calls and prevent GitHub rate-limit exhaustion.",
+    ],
     github: "https://github.com/annshita/RAG-Code-Chat",
     live: "https://ragbasedcodechat.streamlit.app/",
   },
   {
+    title: "DocuAgent",
+    stack: "Model Context Protocol (MCP), LLM Token Optimization, Fault Tolerance Architecture",
+    points: [
+      "Engineered a document-analysis AI agent using the Model Context Protocol (MCP) and the Agno framework, securely scoping a Node.js filesystem server over stdio to grant a Gemini LLM autonomous, read-only access to user-uploaded files.",
+      "Architected a hybrid context-injection strategy that pre-loads document excerpts into the LLM system prompt while maintaining MCP as an on-demand fallback tool, reducing API round-trip latency and optimizing token consumption.",
+      "Built robust fault-tolerance mechanisms by implementing a custom regex-driven retry backoff for rate limits and automated fallback routing from primary to secondary LLMs, ensuring uninterrupted service during API outages or strict token caps.",
+    ],
+    github: "https://github.com/annshita/DocuAgent",
+    live: "https://docuagent.streamlit.app/",
+  },
+  {
     title: "GitHub Repo Agent",
-    stack: "Agentic AI, MCP",
-    desc: "An MCP based Agent that answers user queries about GitHub repositories. This Streamlit app lets you interact with GitHub repositories using natural language queries.",
+    stack: "Model Context Protocol (MCP), Agentic LLM Architecture, Defense in Depth Security",
+    points: [
+      "Engineered an autonomous repository assistant using Python and the Model Context Protocol (MCP), enabling natural language querying of live GitHub data (code, issues, pull requests) via a standardized tool interface.",
+      "Integrated Groq's LPU-accelerated inference with the Agno framework, achieving near-instantaneous reasoning loops for multi-step agent actions and minimizing latency compared to traditional RAG architectures.",
+      "Implemented principle-of-least-privilege security by explicitly whitelisting read-only MCP tools and isolating user API credentials to prevent multi-tenant state collisions in concurrent environments.",
+    ],
     github: "https://github.com/annshita/GitHub-Repo-Agent",
     live: "https://repository-agent-mcp-tools.streamlit.app/",
   },

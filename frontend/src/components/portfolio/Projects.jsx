@@ -59,7 +59,18 @@ export const Projects = () => {
                 <div className="md:col-span-7">
                   <h3 className="mb-1 font-serif text-3xl text-plum transition-colors group-hover:text-blush-600 md:text-4xl">{p.title}</h3>
                   <p className="mb-3 text-xs uppercase tracking-widest text-blush-600">{p.stack}</p>
-                  <p className="leading-relaxed text-plum/70">{p.desc}</p>
+                  {p.points ? (
+                    <ul className="space-y-2 text-plum/70">
+                      {p.points.map((point, idx) => (
+                        <li key={idx} className="flex items-start gap-2 leading-relaxed">
+                          <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-blush-400" />
+                          <span>{point}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="leading-relaxed text-plum/70">{p.desc}</p>
+                  )}
                 </div>
                 <div className="flex flex-wrap items-center gap-3 md:col-span-3 md:justify-end">
                   {liveUrl && (
