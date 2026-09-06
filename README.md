@@ -1,10 +1,10 @@
-# 🌸 Anshita Verma — Personal Portfolio
+# 🌸 Personal Portfolio
 
 > Hi! Finally made a portfolio website (with AI ofc — but ig that's everywhere rn!)
 
 A full-stack personal portfolio website featuring a React + TailwindCSS frontend with smooth animations and a Python FastAPI backend wired to MongoDB and an email delivery service.
 
-**Live:** [annshita.dev](https://annshita.dev) &nbsp;|&nbsp; **GitHub:** [annshita](https://github.com/annshita)
+**Live:** [annshita.dev](https://anshitavermaportfolio.vercel.app/) &nbsp;|&nbsp; **GitHub:** [annshita](https://github.com/annshita/portfolio)
 
 ---
 
