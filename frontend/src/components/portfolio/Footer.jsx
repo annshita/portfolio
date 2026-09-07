@@ -12,7 +12,7 @@ export const Footer = () => (
           </a>
         ))}
       </div>
-      <p className="text-xs text-plum/40">© {new Date().getFullYear()} · Made with a little pink magic</p>
+      <p className="text-xs text-plum/40">© {new Date().getFullYear()} · Vibe coded, pinkified, and held together by delusion 🎀</p>
     </div>
   </footer>
 );

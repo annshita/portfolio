@@ -66,7 +66,7 @@ export const Contact = () => {
         <motion.div variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} className="lg:col-span-5">
           <p className="mb-4 text-xs uppercase tracking-[0.35em] text-blush-600">(Contact)</p>
           <h2 className="font-serif text-5xl leading-[1.05] text-plum md:text-7xl">
-            Let's make<br /><span className="italic text-blush-500">something</span> lovely
+            Let's make<br /><span className="italic text-blush-500">something</span> fun
           </h2>
           <p className="mt-8 max-w-sm leading-relaxed text-plum/60">
             Have a role, a research idea, or just want to say hi? My inbox is always open.
