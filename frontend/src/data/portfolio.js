@@ -100,8 +100,12 @@ export const PROJECTS = [
   },
   {
     title: "Real Time OS Scheduler",
-    stack: "C++ · Operating Systems",
-    desc: "A real-time task scheduling simulator, written in modern C++17. A portable C++ library + CLI + web visualizer with five scheduling algorithms, so it runs anywhere (Linux/macOS/Windows, or in CI) instead of requiring physical hardware or simulator.",
+    stack: "C++, Operating System, DevOps",
+    points: [
+      "Architected a real-time task scheduling simulator in C++17, implementing dynamic and static priority algorithms (EDF, RMS, FPS, LLF, Round-Robin) to analyze CPU utilization, context switches, and deadline metrics.",
+      "Built a Node.js/Express REST API to execute the compiled C++ binary, serving a custom interactive frontend that visualizes simulation results and task execution sequences via Gantt charts.",
+      "Streamlined application deployment by designing a multi-stage Docker build, effectively isolating the GCC build environment from the Node.js runtime to minimize the final container footprint.",
+    ],
     github: "https://github.com/annshita/RTOS-Scheduler",
     live: "https://rtos-scheduler.onrender.com/",
   },
