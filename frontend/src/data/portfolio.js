@@ -8,7 +8,7 @@ export const PROFILE = {
   tagline:
     "Software Engineer, Ex-Samsung, Integrated B.Tech+M.Tech (CSE) NITH'26. Problem Solving, Vibe Coding, Exploring and trying anything and everything. HMU for any open roles 🦄",
   bio: [
-    "Hi! I am an engineer with a Master's in Technology (screams in Howard Wolowitz, except i don't have work to show up to). I'm kinda decent at a lot of things, and curious enough to keep adding to the list. Although I'm still figuring things out, if you think I could be useful to you, feel free to check out my work and say hi! 🍭",
+    "Hi, I'm Anshita 🍭 and i'm an engineer (atleast on papers). I'm kinda decent at a lot of things, and curious enough to keep adding to the list. Although I'm still figuring things out, if you think I could be useful to you, feel free to check out my work or say Hi! Also I have a Master's degree in Engineering (screams in Howard Wolowitz, except it's neither from MIT nor do I work at CalTech 🥀).",
   ],
 };
 
