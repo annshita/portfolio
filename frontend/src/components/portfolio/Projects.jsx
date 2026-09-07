@@ -104,15 +104,35 @@ export const Projects = () => {
         <motion.div variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} className="mt-24">
           <h3 className="mb-10 font-serif text-3xl italic text-plum">Honours & achievements</h3>
           <div className="grid gap-5 md:grid-cols-2">
-            {ACHIEVEMENTS.map((a, i) => (
-              <motion.div
-                key={i} custom={i} variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }}
-                className="flex gap-4 rounded-2xl bg-white/60 p-6 ring-1 ring-blush-200/50"
-              >
-                <span className="font-serif text-2xl text-blush-400">✦</span>
-                <p className="text-plum/75">{a}</p>
-              </motion.div>
-            ))}
+            {ACHIEVEMENTS.map((a, i) => {
+              const inner = (
+                <>
+                  <span className="font-serif text-2xl text-blush-400">✦</span>
+                  <p className="text-plum/75">{a.text}</p>
+                  {a.link && (
+                    <span className="ml-auto self-start text-blush-400 opacity-60 group-hover:opacity-100 transition-opacity text-sm">↗</span>
+                  )}
+                </>
+              );
+              return a.link ? (
+                <motion.a
+                  href={a.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={i} custom={i} variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }}
+                  className="group flex gap-4 rounded-2xl bg-white/60 p-6 ring-1 ring-blush-200/50 hover:ring-blush-400/60 hover:bg-white/80 hover:shadow-md transition-all duration-200 cursor-pointer"
+                >
+                  {inner}
+                </motion.a>
+              ) : (
+                <motion.div
+                  key={i} custom={i} variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }}
+                  className="flex gap-4 rounded-2xl bg-white/60 p-6 ring-1 ring-blush-200/50"
+                >
+                  {inner}
+                </motion.div>
+              );
+            })}
           </div>
         </motion.div>
       </motion.div>

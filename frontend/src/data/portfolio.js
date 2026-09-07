@@ -6,9 +6,9 @@ export const PROFILE = {
   email: "annshhita@gmail.com",
   phone: "+91 78078 59029",
   tagline:
-    "Software engineer by day, code detective and AI power user by night. I’m a curious generalist who loves bridging the gap between core algorithms and real-world machine learning. Whether I’m optimizing data structures, fine-tuning ML models, or leveraging AI tools to build faster, I thrive on tackling new technical challenges head-on.",
+    "Software Engineer, Ex-Samsung, Integrated B.Tech+M.Tech (CSE) NITH'26. Problem Solving, Vibe Coding, Exploring and trying anything and everything. HMU for any open roles 🦄",
   bio: [
-    "Hi! I'm an engineer who wears way too many hats. Armed with an Integrated Master's in Computer Science, experience at Samsung, published research, and a mild obsession with LeetCode, I'm the kind of developer who uses AI to build faster, experiment bolder, and tackle tricky problems from every angle.",
+    "Hi! I am an engineer with a Master's in Technology (screams in Howard Wolowitz, except i don't have work to show up to). I'm kinda decent at a lot of things, and curious enough to keep adding to the list. Although I'm still figuring things out, if you think I could be useful to you, feel free to check out my work and say hi! 🍭",
   ],
 };
 
@@ -119,10 +119,22 @@ export const PROJECTS = [
 ];
 
 export const ACHIEVEMENTS = [
-  "Solved 550+ LeetCode problems (top 16%) and 800+ across all platforms combined.",
-  "Published research on MedViT-based Alzheimer's diagnosis — accepted at IEEE CVMI-2025, NIT Rourkela.",
-  "CLIP-based framework for kidney condition diagnosis accepted at IEEE CVMI-2026, COEP Pune (to be published).",
-  "Co-authored a paper on Alzheimer's stage prediction using a Kolmogorov–Arnold Network.",
+  {
+    text: "Solved 550+ LeetCode problems (1905, Knight) and 800+ across all platforms combined.",
+    link: "https://codolio.com/profile/annshhita",
+  },
+  {
+    text: "Published research on MedViT-based Alzheimer's diagnosis — accepted at IEEE CVMI-2025, NIT Rourkela.",
+    link: "https://ieeexplore.ieee.org/document/11337858",
+  },
+  {
+    text: "CLIP-based framework for kidney condition diagnosis accepted at IEEE CVMI-2026, COEP Pune (to be published).",
+    link: "",
+  },
+  {
+    text: "Co-authored a paper on Alzheimer's stage prediction using a Kolmogorov–Arnold Network.",
+    link: "https://www.techrxiv.org/doi/full/10.36227/techrxiv.174803834.41610666/v1",
+  },
 ];
 
 export const MARQUEE_WORDS = [
