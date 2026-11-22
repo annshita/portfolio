@@ -18,23 +18,23 @@ export const LINKS = [
   { label: "LeetCode", url: "https://leetcode.com/u/annshhita/", handle: "@annshhita" },
 ];
 
-export const MANIFESTO = [
-  {
-    n: "01",
-    title: "Curiosity first",
-    body: "I don't lock myself into a single niche. I willingly jump across domains and follow complex problems wherever they lead. But when a project demands depth, I can hyper focus and obsess over the finest details until it's solved.",
-  },
-  {
-    n: "02",
-    title: "Attention to detail",
-    body: "From designing evaluation frameworks for medical datasets to writing clean, optimized algorithm pipelines, fine grained details always matter the most. Research and implementation deserve the exact same precision.",
-  },
-  {
-    n: "03",
-    title: "Keep learning, keep shipping",
-    body: "Some deployed web applications while some concepts still developing, clean code and bold research mean the most when they actually hit production and reach real people.",
-  },
-];
+// export const MANIFESTO = [
+//   {
+//     n: "01",
+//     title: "Curiosity first",
+//     body: "I don't lock myself into a single niche. I willingly jump across domains and follow complex problems wherever they lead. But when a project demands depth, I can hyper focus and obsess over the finest details until it's solved.",
+//   },
+//   {
+//     n: "02",
+//     title: "Attention to detail",
+//     body: "From designing evaluation frameworks for medical datasets to writing clean, optimized algorithm pipelines, fine grained details always matter the most. Research and implementation deserve the exact same precision.",
+//   },
+//   {
+//     n: "03",
+//     title: "Keep learning, keep shipping",
+//     body: "Some deployed web applications while some concepts still developing, clean code and bold research mean the most when they actually hit production and reach real people.",
+//   },
+// ];
 
 export const SKILLS = {
   languages: ["C++", "C", "Python", "Kotlin", "Java", "SQL", "HTML", "CSS", "JavaScript", "Typescript"],
