@@ -87,17 +87,17 @@ export const PROJECTS = [
     github: "https://github.com/annshita/DocuAgent",
     live: "https://docuagent.streamlit.app/",
   },
-  {
-    title: "GitHub Repo Agent",
-    stack: "Model Context Protocol (MCP), Agentic LLM Architecture, Defense in Depth Security",
-    points: [
-      "Engineered an autonomous repository assistant using Python and the Model Context Protocol (MCP), enabling natural language querying of live GitHub data (code, issues, pull requests) via a standardized tool interface.",
-      "Integrated Groq's LPU-accelerated inference with the Agno framework, achieving near-instantaneous reasoning loops for multi-step agent actions and minimizing latency compared to traditional RAG architectures.",
-      "Implemented principle-of-least-privilege security by explicitly whitelisting read-only MCP tools and isolating user API credentials to prevent multi-tenant state collisions in concurrent environments.",
-    ],
-    github: "https://github.com/annshita/GitHub-Repo-Agent",
-    live: "https://repository-agent-mcp-tools.streamlit.app/",
-  },
+  // {
+  //   title: "GitHub Repo Agent",
+  //   stack: "Model Context Protocol (MCP), Agentic LLM Architecture, Defense in Depth Security",
+  //   points: [
+  //     "Engineered an autonomous repository assistant using Python and the Model Context Protocol (MCP), enabling natural language querying of live GitHub data (code, issues, pull requests) via a standardized tool interface.",
+  //     "Integrated Groq's LPU-accelerated inference with the Agno framework, achieving near-instantaneous reasoning loops for multi-step agent actions and minimizing latency compared to traditional RAG architectures.",
+  //     "Implemented principle-of-least-privilege security by explicitly whitelisting read-only MCP tools and isolating user API credentials to prevent multi-tenant state collisions in concurrent environments.",
+  //   ],
+  //   github: "https://github.com/annshita/GitHub-Repo-Agent",
+  //   live: "https://repository-agent-mcp-tools.streamlit.app/",
+  // },
   {
     title: "Real Time OS Scheduler",
     stack: "C++, Operating System, DevOps",
