@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { PROFILE, MANIFESTO, LINKS } from "../../data/portfolio";
+import { PROFILE, LINKS } from "../../data/portfolio";
 
 const reveal = {
   hidden: { opacity: 0, y: 40 },
@@ -72,7 +72,7 @@ export const About = () => {
             <img src={WORKSPACE_IMAGE} alt="Workspace" className="h-64 w-full object-cover md:h-72" />
           </motion.div>
 
-          <div className="mt-10 space-y-9">
+          {/* <div className="mt-10 space-y-9">
             {MANIFESTO.map((m, i) => (
               <motion.div
                 key={m.n} custom={i} variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }}
@@ -83,7 +83,7 @@ export const About = () => {
                 <p className="mt-1 text-sm leading-relaxed text-plum/60">{m.body}</p>
               </motion.div>
             ))}
-          </div>
+          </div> */}
         </div>
       </motion.div>
     </section>
